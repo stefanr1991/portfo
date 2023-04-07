@@ -36,21 +36,9 @@ def submit_form():
     if request.method == 'POST':
         try:
             data = request.form.to_dict()
-            # Write form data to file
             write_to_csv(data)
             return redirect(url_for('html_page', page_name='thankyou.html') + '#bottom')
         except:
             return 'Did not save to database'
     else:
         return 'Something went wrong. Please try again.'
-
-
-
-
-
-
-
-
-#IDEAS
-# git clone button + dowload button @ projects
-# dropbar for 'what I have learned @ projects
