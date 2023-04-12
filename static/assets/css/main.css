@@ -1962,6 +1962,13 @@ input, select, textarea {
 
 		.icon.solid:before {
 			font-weight: 900;
+			font-size: 6em;
+		}
+		
+		.fa-solid:before {
+			font-weight: 900;
+			font-size: 6em;
+			color: #EA8A95;
 		}
 
 		.icon.brands:before {
